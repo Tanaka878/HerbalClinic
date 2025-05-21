@@ -39,13 +39,7 @@ const TopNavBar: React.FC = () => {
   ];
 
   return (
-    <nav
-      className={`fixed w-full z-10 transition-all duration-300 ${
-        scrolled
-          ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg'
-          : 'bg-transparent'
-      }`}
-    >
+    <nav className="fixed w-full z-50 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo and Brand */}
@@ -90,7 +84,7 @@ const TopNavBar: React.FC = () => {
               </a>
             ))}
             <button className="ml-4 px-4 py-1.5 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-medium rounded-full hover:shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:-translate-y-0.5">
-              Sign In
+              Contact Admin
             </button>
           </div>
 
@@ -149,7 +143,7 @@ const TopNavBar: React.FC = () => {
           ))}
           <div className="pt-2">
             <button className="w-full px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-base font-medium rounded-md hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
-              Sign In
+              Contact Admin
             </button>
           </div>
         </div>
