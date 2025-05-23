@@ -1,6 +1,7 @@
 import React from 'react';
 import TopNavBar from '../Views/TopNavBar';
 import Hero from '../Views/Hero';
+import Services from '../Views/Services';
 const Layout: React.FC = ({ }) => {
     return (
         <div className="layout">
@@ -9,6 +10,7 @@ const Layout: React.FC = ({ }) => {
             </header>
             <main className="main-content">
                 <Hero/>
+                <Services/>
 
             </main>
             <footer className="footer">

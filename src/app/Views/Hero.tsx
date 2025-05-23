@@ -37,8 +37,8 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-gray-600">
-              You are not alone. Our community is here to support you every step of the way.
-              Join our supportive community today and unlock a path to holistic well-being.
+              To support men by fostering camaraderie and sharing experiences to ease unspoken struggles.
+
             </p>
             
             <div className="pt-4 space-y-4">
@@ -71,9 +71,7 @@ const Hero = () => {
               </a>
             </div>
             
-            <div className="pt-6 text-sm text-gray-500">
-              <p>No sign-up required. Connect instantly and start your wellness journey today.</p>
-            </div>
+           
           </div>
           
           {/* Hero image */}
