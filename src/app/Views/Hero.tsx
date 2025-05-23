@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, Leaf, Heart, MessageCircle } from 'lucide-react';
+import Image from 'next/image';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +37,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-gray-600">
-              Discover the transformative power of nature's remedies combined with expert daily counseling. 
+              You are not alone. Our community is here to support you every step of the way.
               Join our supportive community today and unlock a path to holistic well-being.
             </p>
             
@@ -82,9 +83,12 @@ const Hero = () => {
               <div className="absolute -bottom-6 -right-6 w-full h-full rounded-xl bg-yellow-100"></div>
               <div className="relative bg-white p-4 rounded-xl shadow-lg">
                 <div className="aspect-w-16 aspect-h-9 bg-green-100 rounded-lg overflow-hidden">
-                  <img 
+                  <Image 
                     src="/api/placeholder/800/600" 
                     alt="SaveAman Herbal Products" 
+                    width={40}
+                    height={30}
+                    layout="responsive"
                     className="w-full h-full object-cover"
                   />
                 </div>

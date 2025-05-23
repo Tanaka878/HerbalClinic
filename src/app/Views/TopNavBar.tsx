@@ -11,6 +11,7 @@ const TopNavBar: React.FC = () => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
         setScrolled(true);
+        console.log(scrolled)
       } else {
         setScrolled(false);
       }
