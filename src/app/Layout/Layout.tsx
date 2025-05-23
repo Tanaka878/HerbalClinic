@@ -3,6 +3,7 @@ import TopNavBar from '../Views/TopNavBar';
 import Hero from '../Views/Hero';
 import Services from '../Views/Services';
 import Testimonials from '../Views/Testimonials';
+import Footer from '../Views/Footer';
 const Layout: React.FC = ({ }) => {
     return (
         <div className="layout">
@@ -17,7 +18,8 @@ const Layout: React.FC = ({ }) => {
             </main>
             <footer className="footer">
                 {/* Footer content goes here */}
-                <p>Footer content</p>
+             <Footer/>
+                
             </footer>
            
         </div>
