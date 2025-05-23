@@ -6,22 +6,16 @@ const TopNavBar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('');
 
-  // Handle scroll effect for transparent to solid background
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
         setScrolled(true);
-        console.log(scrolled)
       } else {
         setScrolled(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    // Set initial active link based on current path
-    const path = window.location.pathname;
-    setActiveLink(path);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -33,11 +27,10 @@ const TopNavBar: React.FC = () => {
   };
 
   const navLinks = [
-    { href: '/page1', label: 'Home' },
-    { href: '/page2', label: 'Services' },
-    { href: '/page3', label: 'Donations' },
-    { href: '/page4', label: 'Testimonials' },
-    
+    { href: '#home', label: 'Home' },
+    { href: '#services', label: 'Services' },
+    { href: '#donations', label: 'Donations' },
+    { href: '#testimonials', label: 'Testimonials' },
   ];
 
   return (
@@ -145,7 +138,7 @@ const TopNavBar: React.FC = () => {
           ))}
           <div className="pt-2">
             <button className="w-full px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-base font-medium rounded-md hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
-              Contact Admin
+              Join Group
             </button>
           </div>
         </div>

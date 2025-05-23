@@ -61,7 +61,7 @@ const Services = () => {
   }, [services]);
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section id="services" className="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full opacity-20 -translate-x-32 -translate-y-32"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-green-100 to-emerald-100 rounded-full opacity-20 translate-x-48 translate-y-48"></div>
