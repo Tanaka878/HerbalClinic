@@ -139,12 +139,12 @@ const Services = () => {
           }`}
         >
           {/* Background pattern */}
-          <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 opacity-10" id='donations'>
             <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white -translate-y-32 translate-x-32"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-white translate-y-24 -translate-x-24"></div>
           </div>
           
-          <div className="relative z-10 text-center" id='donations'>
+          <div className="relative z-10 text-center" >
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               How We Make It <span className="text-green-200">Accessible</span>
             </h2>

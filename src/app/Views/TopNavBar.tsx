@@ -92,7 +92,7 @@ const TopNavBar: React.FC = () => {
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none"
               aria-expanded="false"
             >
-              <div className="w-6 h-6 relative">
+              <div className="w-6 h-9 relative">
                 <span
                   className={`absolute h-0.5 w-full bg-current transform transition-all duration-300 ease-in-out ${
                     isMenuOpen ? 'rotate-45 top-3' : 'top-1'
@@ -116,8 +116,8 @@ const TopNavBar: React.FC = () => {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
-          isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+        className={`md:hidden transition-all duration-300 ease-in-out overflow-y-auto ${
+          isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 backdrop-blur-md bg-gray-900/90">
@@ -138,11 +138,11 @@ const TopNavBar: React.FC = () => {
               {link.label}
             </a>
           ))}
-          <div className="pt-2">
-            <button className="w-full px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-base font-medium rounded-md hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
-              Join Group
-            </button>
-          </div>
+        </div>
+        <div className="px-2 pb-3">
+          <button className="w-full px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-base font-medium rounded-md hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
+            Join Group
+          </button>
         </div>
       </div>
     </nav>
