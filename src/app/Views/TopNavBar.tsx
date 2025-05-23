@@ -34,9 +34,10 @@ const TopNavBar: React.FC = () => {
 
   const navLinks = [
     { href: '/page1', label: 'Home' },
-    { href: '/page2', label: 'Features' },
-    { href: '/page3', label: 'Pricing' },
-    { href: '/page4', label: 'Contact' },
+    { href: '/page2', label: 'Services' },
+    { href: '/page3', label: 'Donations' },
+    { href: '/page4', label: 'Testimonials' },
+    
   ];
 
   return (

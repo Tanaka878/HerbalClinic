@@ -54,7 +54,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a
-                href="https://wa.me/your-whatsapp-group-link"
+                href="https://whatsapp.com/channel/0029VaChiseHrDZagoSH1b1M"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300 transform hover:-translate-y-1"
@@ -82,7 +82,7 @@ const Hero = () => {
               <div className="relative bg-white p-4 rounded-xl shadow-lg">
                 <div className="aspect-w-16 aspect-h-9 bg-green-100 rounded-lg overflow-hidden">
                   <Image 
-                    src="/api/placeholder/800/600" 
+                    src="/Images/forest.webp" 
                     alt="SaveAman Herbal Products" 
                     width={40}
                     height={30}

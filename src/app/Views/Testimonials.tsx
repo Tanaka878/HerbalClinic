@@ -23,39 +23,39 @@ const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
       text: "SaveAman's herbal products and daily counseling transformed my approach to wellness. The natural remedies combined with professional guidance helped me achieve balance I never thought possible.",
-      image: '/api/placeholder/80/80',
-      name: 'Sarah Johnson',
+      image: '/Images/noprofile.jpeg',
+      name: 'Tanaka Musungare',
       title: 'Wellness Enthusiast',
       rating: 5,
       category: 'wellness'
     },
     {
       text: "The daily motivation and counseling sessions provided by SaveAman gave me the strength to overcome my challenges. Their holistic approach truly makes a difference.",
-      image: '/api/placeholder/80/80',
-      name: 'Michael Chen',
+      image: '/Images/noprofile.jpeg',
+      name: 'Mr Taurai',
       title: 'Business Owner',
       rating: 5,
       category: 'counseling'
     },
     {
       text: "I was skeptical about herbal remedies until I tried SaveAman's products. The quality and effectiveness exceeded my expectations, and the $1 subscription made it accessible.",
-      image: '/api/placeholder/80/80',
-      name: 'Emily Rodriguez',
+      image: '/Images/noprofile.jpeg',
+      name: 'Tamuka Chikomo',
       title: 'Healthcare Worker',
       rating: 4,
       category: 'herbal'
     },
     {
       text: "The WhatsApp community is incredibly supportive, and the daily content keeps me motivated. SaveAman has created something truly special for mental health and wellness.",
-      image: '/api/placeholder/80/80',
-      name: 'David Thompson',
+      image: '/Images/noprofile.jpeg',
+      name: 'Kudzi',
       title: 'Teacher',
       rating: 5,
       category: 'wellness'
     },
     {
       text: "Professional counseling at such an affordable price point is revolutionary. The team at SaveAman genuinely cares about making wellness accessible to everyone.",
-      image: '/api/placeholder/80/80',
+      image: '/Images/noprofile.jpeg',
       name: 'Lisa Park',
       title: 'Student',
       rating: 5,
@@ -63,8 +63,8 @@ const Testimonials: React.FC = () => {
     },
     {
       text: "The natural herbs have become an essential part of my daily routine. Combined with the motivational content, I feel more energized and focused than ever before.",
-      image: '/api/placeholder/80/80',
-      name: 'James Wilson',
+      image: '/Images/noprofile.jpeg',
+      name: 'Zviko',
       title: 'Entrepreneur',
       rating: 4,
       category: 'herbal'
@@ -206,7 +206,7 @@ const Testimonials: React.FC = () => {
             <h3 className="text-2xl font-bold mb-4">Ready to Start Your Wellness Journey?</h3>
             <p className="text-green-100 mb-6">Join thousands of others who have transformed their lives with SaveAman.</p>
             <a
-              href="https://wa.me/your-whatsapp-group-link"
+              href="https://whatsapp.com/channel/0029VaChiseHrDZagoSH1b1M"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1"
