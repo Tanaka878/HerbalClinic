@@ -144,7 +144,7 @@ const Services = () => {
             <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-white translate-y-24 -translate-x-24"></div>
           </div>
           
-          <div className="relative z-10 text-center">
+          <div className="relative z-10 text-center" id='donations'>
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               How We Make It <span className="text-green-200">Accessible</span>
             </h2>

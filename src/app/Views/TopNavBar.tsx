@@ -31,6 +31,8 @@ const TopNavBar: React.FC = () => {
     { href: '#services', label: 'Services' },
     { href: '#donations', label: 'Donations' },
     { href: '#testimonials', label: 'Testimonials' },
+    { href: '#contact', label: 'Contact Us' },
+
   ];
 
   return (

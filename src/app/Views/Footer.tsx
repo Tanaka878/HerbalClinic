@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
     }
 
   return (
-    <>
+    < >
       {/* Scroll to top button */}
       <button
         onClick={scrollToTop}
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-purple-400 to-pink-400 rounded-full translate-x-48 translate-y-48"></div>
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" id='contact'>
           {/* Main footer content */}
           <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand section */}
