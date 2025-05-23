@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { Star, Quote, Heart, Users, Sparkles } from 'lucide-react';
+import Image from 'next/image';
 
 interface Testimonial {
   text: string;
@@ -122,14 +123,14 @@ const Testimonials: React.FC = () => {
           {/* Filter buttons */}
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { key: 'all', label: 'All Stories', icon: <Quote className="w-4 h-4" /> },
-              { key: 'wellness', label: 'Wellness', icon: <Heart className="w-4 h-4" /> },
-              { key: 'counseling', label: 'Counseling', icon: <Users className="w-4 h-4" /> },
-              { key: 'herbal', label: 'Herbal', icon: <Sparkles className="w-4 h-4" /> }
+              { key: 'all' as 'all' | 'wellness' | 'counseling' | 'herbal', label: 'All Stories', icon: <Quote className="w-4 h-4" /> },
+              { key: 'wellness' as 'all' | 'wellness' | 'counseling' | 'herbal', label: 'Wellness', icon: <Heart className="w-4 h-4" /> },
+              { key: 'counseling' as 'all' | 'wellness' | 'counseling' | 'herbal', label: 'Counseling', icon: <Users className="w-4 h-4" /> },
+              { key: 'herbal' as 'all' | 'wellness' | 'counseling' | 'herbal', label: 'Herbal', icon: <Sparkles className="w-4 h-4" /> }
             ].map((filter) => (
               <button
                 key={filter.key}
-                onClick={() => setActiveFilter(filter.key as any)}
+                onClick={() => setActiveFilter(filter.key)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeFilter === filter.key
                     ? 'bg-gradient-to-r from-green-600 to-blue-600 text-white shadow-lg'
@@ -179,9 +180,11 @@ const Testimonials: React.FC = () => {
                     
                     <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
                       <div className="flex-shrink-0">
-                        <img
+                        <Image
                           src={testimonial.image}
                           alt={testimonial.name}
+                          width={80}
+                            height={80}
                           className="w-12 h-12 rounded-full object-cover ring-2 ring-gray-100 group-hover:ring-green-200 transition-all duration-300"
                         />
                       </div>
