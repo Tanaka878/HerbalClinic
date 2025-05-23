@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const TopNavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('');
 
   useEffect(() => {
